@@ -9,5 +9,3 @@ services:
       - ..:/workspace
     ports:
       - "8000:8000" # Example port mapping, adjust as needed
-
-    command: /bin/sh -c "while sleep 1000; do :; done"
