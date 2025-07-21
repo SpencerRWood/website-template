@@ -19,4 +19,16 @@ def test_route():
 async def read_root(request: Request):
     return templates.TemplateResponse("home.html", {"request": request, "title": "Hello World"})
 
+@app.get("/about", response_class=HTMLResponse)
+async def about(request: Request):
+    return templates.TemplateResponse("about.html", {"request": request})
+
+@app.get("/services", response_class=HTMLResponse)
+async def about(request: Request):
+    return templates.TemplateResponse("services.html", {"request": request})
+
+@app.get("/contact", response_class=HTMLResponse)
+async def about(request: Request):
+    return templates.TemplateResponse("services.html", {"request": request})
+
 app.mount("/static", StaticFiles(directory="app/static"), name="static")

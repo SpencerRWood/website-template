@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/templates/**/*.html"],
+  content: ["./app/templates/*.html"],
   theme: {
     extend: {},
   },
@@ -9,15 +9,24 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          "primary": "#1e40af", // Deep Navy Blue
-          "secondary": "#2563eb", // Bright Royal Blue
-          "accent": "#60a5fa", // Soft Sky Blue
-          "neutral": "#e5e7eb", // Light gray
-          "base-100": "#f9fafb", // Very light gray/white
-          "info": "#9333ea", // Bright Purple
-          "success": "#22c55e", // True Vibrant Green
-          "warning": "#f59e0b", // Saturated Warm Yellow
-          "error": "#ef4444", // Bright Red
+        "primary": "#1e40af",
+        "primary-content": "#ffffff",
+        "secondary": "#2563eb",
+        "secondary-content": "#ffffff",
+        "accent": "#60a5fa",
+        "accent-content": "#1e40af",
+        "neutral": "#e5e7eb",
+        "neutral-content": "#1e2937",
+        "base-100": "#f9fafb",
+        "base-content": "#1e2937",
+        "info": "#9333ea",
+        "info-content": "#fff",
+        "success": "#22c55e",
+        "success-content": "#fff",
+        "warning": "#f59e0b",
+        "warning-content": "#fff",
+        "error": "#ef4444",
+        "error-content": "#fff"
         },
       },
     ],
