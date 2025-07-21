@@ -1,17 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="mytheme">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}FastAPI with TailwindCSS{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}Default Description{% endblock %}">
+    <meta name="keywords" content="{% block meta_keywords %}default,keywords{% endblock %}">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <!-- Include TailwindCSS -->
     <link href="/static/css/output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
-    <header class="bg-blue-600 text-white p-4">
-        <h1 class="text-center text-2xl">Welcome to My Website</h1>
+<body class="bg-gray-100 text-gray-800 font-sans min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold hover:text-blue-300">
+                My Website
+            </a>
+            <nav class="flex space-x-6">
+                <a href="/" class="hover:text-blue-300">Home</a>
+                <a href="/about" class="hover:text-blue-300">About</a>
+                <a href="/services" class="hover:text-blue-300">Services</a>
+                <a href="/contact" class="hover:text-blue-300">Contact</a>
+            </nav>
+        </div>
     </header>
-    <main class="p-8">
-        {% block content %}{% endblock %}
+    <div class="bg-red-500 text-white p-4">
+        If this text is red with white background, TailwindCSS is working!
+    </div>
+    <div class="btn btn-primary">Primary Button</div>
+    <div class="alert alert-success">Success Alert</div>
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        {% block content %}
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-gray-800">Welcome to My Website</h1>
+            <p class="mt-4 text-lg text-gray-600">This is the default content. Replace it with your page content.</p>
+        </div>
+        {% endblock %}
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 My Website. All rights reserved.</p>
+            <a href="#" class="text-blue-400 hover:underline">Back to top</a>
+        </div>
+    </footer>
 </body>
 </html>

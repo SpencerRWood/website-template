@@ -17,6 +17,6 @@ def test_route():
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request, "title": "Hello World"})
+    return templates.TemplateResponse("home.html", {"request": request, "title": "Hello World"})
 
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
