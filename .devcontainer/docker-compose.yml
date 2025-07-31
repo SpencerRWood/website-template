@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   app:
     build:
@@ -9,3 +7,18 @@ services:
       - ..:/workspace
     ports:
       - "8001:8001" # Example port mapping, adjust as needed
+  directus:
+    image: directus/directus:latest
+    environment:
+      KEY: ${KEY}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      DB_CLIENT: ${DB_CLIENT}
+      DB_HOST: ${DB_HOST}
+      DB_DATABASE: ${DB_DATABASE}
+      DB_PORT: ${DB_PORT}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_SEARCH_PATH: ${DB_SEARCH_PATH}
+    ports:
+      - "8055:8055"

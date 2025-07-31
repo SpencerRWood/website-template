@@ -11,10 +11,6 @@ app.mount("/static", StaticFiles(directory="app/static"), name="static")
 # Set up Jinja2 templates
 templates = Jinja2Templates(directory="app/templates")
 
-@app.get("/test")
-def test_route():
-    return {"message": "FastAPI is working!"}
-
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
     return templates.TemplateResponse("home.html", {"request": request, "title": "Hello World"})
@@ -29,6 +25,6 @@ async def about(request: Request):
 
 @app.get("/contact", response_class=HTMLResponse)
 async def about(request: Request):
-    return templates.TemplateResponse("services.html", {"request": request})
+    return templates.TemplateResponse("contact.html", {"request": request})
 
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
