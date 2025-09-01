@@ -9,15 +9,15 @@ module.exports = {
     themes: [
       {
         mytheme: {
-        "primary": "#1e40af",
-        "primary-content": "#ffffff",
-        "secondary": "#2563eb",
-        "secondary-content": "#ffffff",
-        "accent": "#60a5fa",
-        "accent-content": "#1e40af",
-        "neutral": "#e5e7eb",
-        "neutral-content": "#1e2937",
-        "base-100": "#f9fafb",
+        "primary": "#1e9167ff",
+        "primary-content": "#f8f9faff",
+        "secondary": "#b7c3ccff",
+        "secondary-content": "#040405ff",
+        "accent": "#b4daccff",
+        "accent-content": "#040405ff",
+        "neutral": "#f8f9faff",
+        "neutral-content": "#040405ff",
+        "base-100": "#f2f4f7ff",
         "base-content": "#1e2937",
         "info": "#9333ea",
         "info-content": "#fff",
@@ -30,6 +30,7 @@ module.exports = {
         },
       },
     ],
+    defaultTheme: "mytheme"
   },
 }
 

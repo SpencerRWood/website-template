@@ -33,7 +33,7 @@ RUN npm install
 COPY ./ /workspace/
 
 # Build TailwindCSS
-RUN npm run build:css
+# RUN npm run build:css
 
 # Expose port 8000 for FastAPI
 EXPOSE 8001
