@@ -8,20 +8,33 @@
 </head>
 <body class="min-h-screen flex flex-col">
     <!-- DaisyUI Top Bar Navbar -->
-    <nav class="navbar text-neutral-content">
-      <div class="container mx-auto px-4 flex justify-between items-center">
-        <div class="flex items-center">
-          <img src="/static/img/logo.svg" alt="Logo Placeholder" class="mr-4">
-          <a href="/" class="text-2xl font-bold">My Website - test</a>
-        </div>
-        <div class="flex">
-          <a href="/" class="btn btn-ghost text-xl">Home</a>
-          <a href="/about" class="btn btn-ghost text-xl">About</a>
-          <a href="/services" class="btn btn-ghost text-xl">Services</a>
-          <a href="/contact" class="btn btn-ghost text-xl">Contact</a>
-        </div>
-      </div>
-    </nav>
+<nav class="navbar bg-base-100 border-b border-base-300">
+  <div class="w-full flex items-center justify-between px-8 max-w-7xl mx-auto">
+    
+    <!-- LEFT: Logo + Brand -->
+    <div class="flex items-center gap-2">
+      <img src="/static/img/logo.svg" alt="Logo" class="h-8 w-8">
+      <a href="/" class="text-xl font-bold">Website</a>
+    </div>
+
+    <!-- CENTER: Navigation -->
+    <div class="flex-1 flex justify-center">
+      <ul class="flex items-center space-x-12 font-medium">
+        <li><a href="/" class="hover:text-primary">Home</a></li>
+        <li><a href="/about" class="hover:text-primary">About</a></li>
+        <li><a href="/services" class="hover:text-primary">Services</a></li>
+        <li><a href="/contact" class="hover:text-primary">Contact</a></li>
+      </ul>
+    </div>
+    
+    <!-- RIGHT: Actions -->
+    <div class="flex gap-3">
+      <a href="/signin" class="btn btn-ghost">Sign In</a>
+      <a href="/signup" class="btn btn-primary">Get Started</a>
+    </div>
+
+  </div>
+</nav>
     <!-- Main Content -->
     <main class="flex-1 p-8 w-full">
       {% block content %}
