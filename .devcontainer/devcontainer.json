@@ -16,5 +16,5 @@
             }
         }
     },
-    "postStartCommand": "npm run build:css"
+    "postStartCommand": "npm run watch:css"
 }
