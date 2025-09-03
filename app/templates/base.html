@@ -31,7 +31,7 @@
     
     <!-- RIGHT: Placeholder (aligned right) -->
     <div class="justify-self-end flex items-center gap-3">
-      <a href="/signin" class="btn btn-ghost btn-sm md:btn-sm normal-case">Sign In</a>
+      <a href="/signin" class="btn btn-ghost btn-sm md:btn-sm normal-case">Login</a>
       <a href="/get-started" class="btn btn-primary btn-sm md:btn-sm rounded-full normal-case px-5">
         Get Started
       </a>
@@ -45,44 +45,57 @@
       {% block content %}
       {% endblock %}
     </main>
-    <!-- Footer (optional) -->
-<footer class="footer bg-base-200 text-base-content p-10 justify-center">
-  <div class="container mx-auto flex flex-wrap justify-center gap-12">
-    <nav class="flex flex-col">
-      <h6 class="footer-title">Services</h6>
-      <a class="link link-hover">Branding</a>
-      <a class="link link-hover">Design</a>
-      <a class="link link-hover">Marketing</a>
-      <a class="link link-hover">Advertisement</a>
-    </nav>
-    <nav class="flex flex-col">
-      <h6 class="footer-title">Company</h6>
-      <a class="link link-hover">About us</a>
-      <a class="link link-hover">Contact</a>
-      <a class="link link-hover">Jobs</a>
-      <a class="link link-hover">Press kit</a>
-    </nav>
-    <nav class="flex flex-col">
-      <h6 class="footer-title">Legal</h6>
-      <a class="link link-hover">Terms of use</a>
-      <a class="link link-hover">Privacy policy</a>
-      <a class="link link-hover">Cookie policy</a>
-    </nav>
-    <form class="flex flex-col">
-      <h6 class="footer-title">Newsletter</h6>
-      <fieldset class="w-80">
-        <label class="label">Enter your email address</label>
-        <div class="join">
-          <input
-            type="text"
-            placeholder="username@site.com"
-            class="input input-bordered join-item" />
-          <button class="btn btn-primary join-item">Subscribe</button>
-        </div>
-      </fieldset>
-    </form>
+<footer class="footer bg-base-200 text-base-content p-10">
+  <div class="container mx-auto flex flex-wrap items-start gap-12">
+    
+    <!-- LEFT: Logo + Name -->
+    <div class="flex items-center gap-3">
+      <img src="/static/img/logo.svg" alt="Logo" class="h-10 w-10">
+      <span class="text-xl font-bold">My Website</span>
+    </div>
+
+    <!-- CENTER: Footer navs -->
+    <div class="flex-1 flex flex-wrap justify-center gap-12">
+      <nav class="flex flex-col">
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+
+      <nav class="flex flex-col">
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+
+      <nav class="flex flex-col">
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+
+      <form class="flex flex-col">
+        <h6 class="footer-title">Newsletter</h6>
+        <fieldset class="w-80">
+          <label class="label">Enter your email address</label>
+          <div class="join">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="input input-bordered join-item" />
+            <button class="btn btn-primary join-item">Subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </div>
 </footer>
+
 
 
 </body>
