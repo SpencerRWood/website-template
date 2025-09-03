@@ -21,6 +21,29 @@
   </div>
 
 </div>
+<section class="bg-neutral py-20">
+  <div class="max-w-2xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Join the Waitlist</h2>
+    <p class="text-base-content/70 mb-8">
+      Be the first to know when our SaaS launches. Sign up below and we’ll notify you as soon as we’re live.
+    </p>
+
+    <form class="flex flex-col sm:flex-row items-center gap-4 justify-center">
+      <input 
+        type="email" 
+        placeholder="Enter your email" 
+        class="input input-bordered w-full sm:w-80" 
+        required 
+      />
+      <button class="btn btn-primary w-full sm:w-auto">Join Waitlist</button>
+    </form>
+
+    <p class="text-xs text-base-content/60 mt-4">
+      We respect your privacy. Unsubscribe anytime.
+    </p>
+  </div>
+</section>
+
 <section class="bg-base-200/60 border-y border-base-300 mt-4">
   <div class="max-w-7xl mx-auto px-6 lg:px-8 py-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-12 text-center">
@@ -192,5 +215,44 @@
     </div>
   </div>
 </section>
+
+<div class="card bg-base-100 shadow-sm w-80">
+  <div class="card-body">
+    <h2 class="card-title">Admin panel</h2>
+    <ul class="menu menu-compact">
+      <li>
+        <a>
+          <!-- icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20l9-5-9-5-9 5 9 5zm0-10l9-5-9-5-9 5 9 5z" />
+          </svg>
+          Databases
+          <span class="badge">7</span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V7a2 2 0 00-2-2h-3V3h-6v2H6a2 2 0 00-2 2v6m2 8h12a2 2 0 002-2v-5H4v5a2 2 0 002 2z" />
+          </svg>
+          Products
+        </a>
+      </li>
+      <li>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a2 2 0 011.414.586l5.414 5.414A2 2 0 0120 10.414V19a2 2 0 01-2 2z" />
+          </svg>
+          Messages
+          <span class="badge">29</span>
+        </a>
+      </li>
+      <li><a>Access tokens</a></li>
+      <li><a>Users</a></li>
+      <li><a>Settings</a></li>
+    </ul>
+  </div>
+</div>
+
 
 {% endblock %}
